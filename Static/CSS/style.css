@@ -1,0 +1,18 @@
+
+@import url(header.css);
+
+.parent {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.child {
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-color: #5B8E7D;
+}

@@ -1,0 +1,14 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.child {
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+}
+
+.active {
+    
+}

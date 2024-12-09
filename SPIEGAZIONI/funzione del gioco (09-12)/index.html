@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <div class="startGameWrapper">
+        <a href="#">START GAME</a>
+    </div>
+    <script>
+        // Step 1: addEventListener sul pulsante di start game per avviare il gioco
+        /*
+            Una volta che il gioco è attivo dobbiamo indetificare in maniera randomica:
+            1 - un tempo (che sarà quello di "accensione" di una casella)
+            2 - un elemento fra quelli della griglia
+
+            nel loop di gioco principale:
+            - identificare un'elemento casuale all'interno della lista (recuperare randomGetInt)
+            - assegnare la classe active all'elemento
+            - usare setTimeout per rimuovere la classe dopo un tempo randomico
+            - nel setTImeout bisogna anche rimuovere l'eventListener
+
+            Mentre la classe è assegnata all'elemento bisogna tenere attivo un eventListener
+        */
+
+        function activeElementListener(e) {
+            console.log(e.currentTarget)
+        }
+
+        // Questo addEventListener lo devo assegnare dopo che ho almeno 1 elemento con la classe active
+        // document.querySelector(".active").addEventListener("click", activeElementListener)
+    </script>
+
+</body>
+</html>

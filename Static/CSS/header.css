@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+.header {
+    background-color: #fdc500;
+    margin: 10px;  
+    padding: 10px;
+    text-align: center; 
+
+    border-radius: 15px;
+    font-family: "Parkinsans";
+    color: darkslategray;
+    font-size: 30px;
+
+}
