@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
 .header {
-    background-color: #fdc500;
-    margin: 10px;  
-    padding: 10px;
+    background-color: #384D48;
     text-align: center; 
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
-    border-radius: 15px;
     font-family: "Parkinsans";
-    color: darkslategray;
+    color: black;
     font-size: 30px;
 
 }

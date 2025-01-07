@@ -1,5 +1,6 @@
 
 @import url(header.css);
+@import url(cards.css);
 
 .parent {
     display: flex;
@@ -14,5 +15,5 @@
 }
 
 body {
-    background-color: #5B8E7D;
+    background-color: #D8D4D5;
 }
