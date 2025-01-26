@@ -1,0 +1,31 @@
+.score {
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.start-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.start-button:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    text-align: center;
+}

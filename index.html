@@ -5,27 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="Static/CSS/style.css">
-    <title>Document</title>
+    <title>Hit the Button - Online Game</title>
 </head>
 <body>
     <div class="header">
-        <h1>HIT THE BUTTON - OFFICIAL GAME</h1>
+        <h1>HIT THE BUTTON</h1>
     </div>
     <br>
-    <br>
-    <div class="cards">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+    <div class="container">
+    <p class="score">PUNTEGGIO: "inizia il gioco per mostrarlo"</p>
+    <div class="button">
+        <input type="button" name="buttonStart" class="start-button" value="Inizia il Gioco">
     </div>
+    <br>
+    <div class="game">
+        <div class="cards">
 
-    <div class="footer"></div>
+            <div class="cards-row1">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
 
+            <div class="cards-row2">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+
+            <div class="cards-row3">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+
+            <div class="cards-row4">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+    </div>
+    <p class="finish-message"></p>
+    <p class="error"></p>
     
+    <script src="Static/JS/script.js"></script>
 </body>
 </html>

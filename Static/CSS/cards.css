@@ -1,13 +1,29 @@
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 .card {
-    width: 350px;
-    height: 350px;
-    background-color: red;
+    width: 100px;
+    height: 100px;
+    background-color: #80848c;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card.active {
+    background-color: cyan;
+}
+
+.finish-message {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: red;
+}
+
+.error {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: red;
 }

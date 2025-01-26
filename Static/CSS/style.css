@@ -1,19 +1,8 @@
 
 @import url(header.css);
 @import url(cards.css);
+@import url(game.css);
 
-.parent {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-}
-
-.child {
-    background-color: orange;
-    height: 100px;
-    width: 100px;
-}
-
-body {
-    background-color: #D8D4D5;
+.body {
+    background-color: #e6e2da;
 }
