@@ -14,6 +14,8 @@ button.addEventListener("click", function() {
     startGame();
 });
 
+function gestisciClick(event){}
+
 function startGame() {
     punteggio = 0;
     score.textContent = punteggio;
@@ -30,17 +32,24 @@ function startGame() {
         activeCard.classList.add('active'); 
 
         
+        // qui addEventListener con gestisciClick
+
         activeCard.onclick = function() {
-            if (!gameOver && activeCard.classList.contains('active')) { 
-                punteggio++;
-                score.textContent = `Punteggio: ${punteggio}`; 
-                activeCard.classList.remove('active'); 
-            } else {
-                errors.textContent = 'Non puoi cliccare su questa carta!';
-                setTimeout(() => {
-                    errors.textContent = '';
-                }, 1000);
+            // Se sto giocando allora controllo se ho cliccato l'elemento giusto
+            // Inoltre sempre solo se sto giocando devo RIMUOVERE l'event listener dall'elemento "active"
+            if (!gameOver) {
+                if (activeCard.classList.contains('active')) {
+                    punteggio++;
+                    score.textContent = `Punteggio: ${punteggio}`;
+                    activeCard.classList.remove('active');
+                } else {
+                    errors.textContent = 'Non puoi cliccare su questa carta!';
+                    setTimeout(() => {
+                        errors.textContent = '';
+                    }, 1000);
+                }
             }
+            
         };
     }, 1000);
 
